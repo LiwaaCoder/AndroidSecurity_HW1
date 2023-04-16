@@ -7,15 +7,6 @@
     android:padding="32dp"
     android:background="#F8F8F8">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/Profile_TXT_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:paddingBottom="16dp"
-        android:textColor="#424242"
-        />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/Profile_TXT_battery"
@@ -39,7 +30,7 @@
         android:id="@+id/Profile_IMG_flash"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/ic_flash"/>
 
 
