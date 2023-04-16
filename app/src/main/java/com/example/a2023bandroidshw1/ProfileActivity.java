@@ -18,10 +18,14 @@ public class ProfileActivity extends AppCompatActivity {
     private AppCompatTextView wifiTextView;
     private ShapeableImageView flashImgView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+
 
         // Get references to the password and battery TextViews
         passwordTextView = findViewById(R.id.Profile_TXT_password);
@@ -39,11 +43,11 @@ public class ProfileActivity extends AppCompatActivity {
         int batteryPercentage = bm.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY);
         // Get the password passed from LoginActivity
         String password = getIntent().getStringExtra("password");
-        String wifi_name = getIntent().getStringExtra("wife");
+        String wifi_name = getIntent().getStringExtra("wifi");
 
         // Set the password TextView to display the password
         passwordTextView.setText("Password: " + password);
-        wifiTextView.setText("Wifi Connectd to :"+wifi_name);
+        wifiTextView.setText("You Are Connected To  :"+wifi_name);
 
         // Set the battery TextView to display the battery percentage
         batteryTextView.setText("Battery Percentage: " + batteryPercentage + "%");
